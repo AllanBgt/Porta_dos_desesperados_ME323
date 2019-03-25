@@ -1,0 +1,33 @@
+# Porta_dos_desesperados_ME323
+Arquivos para a tarefa "Porta dos desesperados" de ME323.
+
+Grupo:
+  Allan Borgato - RA: 165416
+  Bruno Eduardo Freire - RA:195052
+  Samuel Cardoso Zampolli Fraga - RA: 205684
+  ME323 - Turma B
+
+COMO SIMULAR:
+  Nesta pasta estão os arquivos da tarefa "Porta dos desesperados".
+  O arquivo "PortaDosDesesperados.py" é o código escrito em python 3.
+  O arquivo "PortaDosDesesperados.ipynb" é o arquivo para simulação no ambiente Jupyter.
+  
+  Abrir no GitHub:
+  1. Basta abrir o arquivo "PortaDosDesesperados.ipynb" localizado no repositório https://github.com/AllanBgt/Porta_dos_desesperados_ME323/new/master?readme=1 clicando sobre o nome do arquivo.
+  
+  Abrir no Jupyter Notebook:
+  1. Abra seu Jupyter Notebook.
+  2. Localize, usando o Jupyter Notebook em seu navegador, o arquivo "PortaDosDesesperados.ipynb" baixado no repositório no repositório https://github.com/AllanBgt/Porta_dos_desesperados_ME323/new/master?readme=1.
+  3. Clique sobre seu nome para abrí-lo.
+  
+  Estarão na tela duas simulações, uma cuja a resposta dada para a pergunta "Voce deseja trocar a porta escolhida?" foi "nao", e outra cuja a resposta foi "sim".
+  Em baixo de cada simulação estarão os gráficos de Proporção acumulada de vitórias x Tentativas.
+  
+Sobre o código:
+  Inicialmente a pergunta "Voce deseja trocar a porta escolhida?" é feita. Caso o jogador responda "nao", o código simulará 1000 vezes o passo a passo da Porta do desesperados, considerando que o jogador não trocou de porta em nenhuma delas. Caso a resposta seja sim, o código simulará 1000 vezes o passo a passo da Porta do desesperados, considerando que o jogador trocou de porta todas as vezes. 
+  O passo a passo que o código simula 1000 vezes é:
+    1. O código cria uma lista com 3 prêmios possíveis: Ouro, cabra e cabra. Em seguida ele embaralha a lista e relaciona cada prêmio a uma porta através de um dicionário.
+    2. Em seguida, o código elimina uma das portas que contenham uma cabra como prêmio, e que não tenha sido a porta escolhida.
+    3. Após, ele leva em consideração se o jogador decidiu trocar de porta. 
+    4. Caso a resposta tenha sido "nao", ele escolhe como porta definitiva a porta escolhida inicialmente, e soma 1 no resultado de vitórias caso a porta definitiva tenha sido a que contenha ouro.
+    5. Caso a resposta tenha sido "sim", ele deleta a porta escolhida inicialmente e escolhe como porta definitiva a porta que restou, e soma 1 no resultado de vitórias caso a porta definitiva tenha sido a que contenha ouro.
